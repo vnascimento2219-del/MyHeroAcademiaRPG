@@ -1,11 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPG: Kimetsu no Yaiba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Fredoka&family=Nunito&family=Poppins&family=Quicksand&family=Rubik&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="KM.css">
+
 </head>
 <body>
+
+    <header>
+        <div class="header-content">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo Kimetsu no Yaiba RPG"/>
+                    <span>KIMETSU NO YAIBA: RPG</span>
+                </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul class="nav-links">
+            <li><a href="#" data-page="principal" class="nav-item active"> Home </a></li>
+            <li><a href="#" data-page="sistemas" class="nav-item"> Systems </a></li>
+            <li><a href="#" data-page="historia" class="nav-item"> History </a></li>
+            <li><a href="#" data-page="personagens" class="nav-item"> Characters </a></li>
+        </ul>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- PRINCIPAL PAGE -->
+
+    <div class="page active" id="principal">
+        <div class="container">
+
+
+            <div class="image-placeholder" id="semBorda">
+                <img src="principal.png" width="100%" height="100%"></img>
+            </div>
+
+            <div class="updates-section">
+
+                <h1> Atualizações </h1>
+                
+                <div class="update-card" data-update="update-1">
+                    <div class="update-title">(xxx)</div>
+                    <div class="update-date">(xxx)</div>
+                </div>
+
+                <div class="update-card" data-update="update-2">
+                    <div class="update-title">(xxx)</div>
+                    <div class="update-date">(xxx)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UPDATE SUBPAGES -->
+    <div class="page" id="update-1">
+        <div class="container">
+            <button class="back-button" data-back="principal">← (xxx)</button>   
+                <h1> Atualizações </h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="update-2">
+        <div class="container">
+            <button class="back-button" data-back="principal">← (xxx)</button>
+            <h1>(xxx)</h1>
+            
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMAS PAGE -->
+    <div class="page" id="sistemas">
+        <div class="container">
+            <br><h1> Sistemas </h1>
+            <p>Esta seção apresenta os principais sistemas que regem a dinâmica do RPG. Aqui, você encontrará informações detalhadas sobre os mecanismos de combate, progressão de personagens, habilidades e demais estruturas que sustentam a experiência de jogo. Cada sistema foi desenvolvido para proporcionar equilíbrio, profundidade estratégica e imersão narrativa. </p>
+
+            <div class="system-grid">
+                <div class="system-card" data-page="sistema-slayer">
+                    <div class="system-icon">⚔️</div>
+                    <div class="system-info">
+                        <div class="system-name"> Slayers </div>
+                        <div class="system-description"> Sistema exclusivo para a raça Humana. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-oni">
+                    <div class="system-icon">👹</div>
+                    <div class="system-info">
+                        <div class="system-name"> Onis </div>
+                        <div class="system-description"> Sistema exclusivo para a raça Oni. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-monetario">
+                    <div class="system-icon">💰</div>
+                    <div class="system-info">
+                        <div class="system-name"> Monetário </div>
+                        <div class="system-description"> Sistema que define a estrutura econômica e as moedas utilizadas no RPG. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-regras">
+                    <div class="system-icon">📖</div>
+                    <div class="system-info">
+                        <div class="system-name"> Guia </div>
+                        <div class="system-description"> Manual explicativo para preenchimento correto da ficha de personagem. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-combate">
+                    <div class="system-icon">📘</div>
+                    <div class="system-info">
+                        <div class="system-name"> Regras </div>
+                        <div class="system-description"> Diretrizes gerais do RPG. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-progressao">
+                    <div class="system-icon">📊</div>
+                    <div class="system-info">
+                        <div class="system-name"> Evolução </div>
+                        <div class="system-description"> Sistema que regula o progresso dos personagens. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA SLAYER PAGE -->
+    <div class="page" id="sistema-slayer">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← (xxx)</button>
+            <h1>(xxx)</h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <div class="content-icon">⚔️</div>
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA ONI PAGE -->
+    <div class="page" id="sistema-oni">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← (xxx)</button>
+            <h1>(xxx)</h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <div class="content-icon">👹</div>
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
     
+    <!-- SISTEMA REGRAS PAGE -->
+    <div class="page" id="sistema-regras">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← (xxx)</button>
+            <h1>(xxx)</h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <div class="content-icon">📖</div>
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA COMBATE PAGE -->
+    <div class="page" id="sistema-combate">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← (xxx)</button>
+            <h1>(xxx)</h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <div class="content-icon">⚡</div>
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA PROGRESSAO PAGE -->
+    <div class="page" id="sistema-progressao">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← Systems </button>
+            <h1> Sistema de Evolução </h1>
+
+            <div class="image-placeholder">
+                <img src="https://i.pinimg.com/1200x/08/ba/09/08ba0998a3e187e444f4f08ae427664b.jpg" width="100%" height="100%"></img>
+            </div>
+
+            <div class="content-section">
+                <h2>I. Introdução</h2>
+                <p>O Sistema de Evolução do RPG “Kimetsu no Yaiba: Hyakki Yagyo” configura-se como uma estrutura narrativa concebida para promover o desenvolvimento equilibrado e coerente dos personagens, fundamentado nas experiências vivenciadas ao longo da jornada dentro da trama. Este sistema estabelece diretrizes claras que regem o crescimento de cada personagem — seja da categoria “Oni” ou “Slayer” — permitindo-lhes adquirir novas habilidades, aprimorar atributos e avançar na história. Neste documento, encontram-se reunidas todas as instruções, explicações e orientações necessárias para a evolução de cada personagem. Diferentemente de abordagens baseadas em repetições mecânicas, este sistema valoriza o progresso genuíno, construído por meio de interações narrativas relevantes, desafios envolventes e decisões que refletem a trajetória singular de cada jogador. A evolução, portanto, não é apenas uma consequência técnica, mas o resultado natural da imersão na história, proporcionando uma experiência rica, dinâmica e verdadeiramente cativante.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>II. Treinamentos</h2>
+                <p>Os treinamentos constituem momentos especiais dedicados ao refinamento das habilidades dos personagens, focados especificamente no domínio de novas técnicas de respiração ou no desenvolvimento das artes sanguíneas. Cada personagem poderá dedicar-se a uma única sessão de treinamento semanal, preservando assim o equilíbrio entre todos os participantes e mantendo a coerência narrativa do universo. As técnicas inovadoras devem ser cuidadosamente elaboradas seguindo seus sistemas correspondentes e submetidas à análise administrativa. Uma vez aprovadas, o treinamento poderá ser realizado conforme os parâmetros estabelecidos. Há um limite mínimo de palavras a ser respeitado, e ressaltamos que, além dessa exigência, o conteúdo deve apresentar consistência narrativa e evidenciar, de forma clara, todo o processo criativo: desde a concepção inicial, passando pela experimentação, até chegar à maestria da técnica desenvolvida. Treinamentos que não atendam aos critérios descritos serão considerados inválidos.</p>
+                <p> Requisito: 500 palavras.</p>
+                <p>Recompensa: Uma nova técnica.</p>
+                <p>Ao publicar o treinamento, o jogador deverá mencionar um membro da equipe administrativa e aguardar a devida aprovação.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>III. Missões Auto-Narradas</h2>
+                <p>As missões auto-narradas consistem em aventuras concebidas e conduzidas integralmente pelos próprios jogadores, sem intervenção direta da equipe administrativa. São experiências narrativas que permitem liberdade criativa, dentro dos limites estabelecidos pelo universo do jogo. No caso dos caçadores de demônios, essas missões devem envolver confrontos variados contra forças malignas, refletindo os desafios que enfrentam em sua jornada de proteção e justiça. Já para os onis, é permitido explorar situações que envolvam a busca por alimento — geralmente humanos vulneráveis — bem como embates diretos contra caçadores, revelando os perigos e dilemas que enfrentam em sua existência sombria. Cada participante tem direito a realizar uma missão auto-narrada por semana, respeitando os critérios estabelecidos para garantir equilíbrio e consistência dentro da trama.</p>
+                <p>O cenário narrativo pode ser livremente concebido pela imaginação do jogador ou desenvolvido com base em propostas previamente apresentadas pela equipe administrativa. Para missões de autoria própria, é indispensável o preenchimento de uma ficha detalhada, contendo objetivos bem definidos, um contexto narrativo consistente e os desafios que deverão ser enfrentados ao longo da missão. Essa ficha deverá ser submetida à avaliação de um administrador, cuja aprovação é obrigatória para que a missão seja considerada válida e apta à execução. Alternativamente, o jogador poderá optar por concluir uma das missões previamente disponibilizadas pela equipe, caso prefira seguir um roteiro estruturado e previamente elaborado.</p>
+                <p>Cada missão deve apresentar coerência interna, respeitando a lógica e os fundamentos do universo da trama. A estrutura narrativa deve ser bem delineada, contemplando uma introdução clara, um desenvolvimento consistente e uma conclusão satisfatória, capaz de amarrar os eventos e justificar as ações realizadas ao longo da narrativa. Todas as decisões tomadas pelos personagens, bem como os acontecimentos descritos, devem estar alinhados com os princípios e limitações estabelecidos pelo cenário do RPG.</p>
+                <p> Requisito: 500 palavras.</p>
+                <p>Recompensa: 5.000 ienes & 1.000 pontos de atributos.</p>
+                <p>Ao publicar a missão, o jogador deverá mencionar um membro da equipe administrativa e aguardar a devida aprovação.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>IV. Eventos e Missões Narradas</h2>
+                <img src="https://i.pinimg.com/736x/ce/ba/fe/cebafe857131a184e1683fbc59e1a0e1.jpg" width="100%" height="100%"></img>
+                <p>Trata-se de experiências narrativas especiais conduzidas diretamente pela equipe administrativa, cuidadosamente planejadas para proporcionar vivências memoráveis aos participantes. Essas atividades — sejam missões ou eventos — apresentam enredos elaborados, desafios singulares e oportunidades de interação coletiva, promovendo não apenas o envolvimento individual, mas também o fortalecimento da dinâmica entre os jogadores. Tanto as missões quanto os eventos exercem influência direta sobre o desenvolvimento da trama principal, podendo alterar o curso da narrativa, introduzir novos elementos ao universo do jogo ou revelar aspectos ocultos da história. São momentos de grande relevância, nos quais os personagens têm a chance de vivenciar situações decisivas, superar obstáculos complexos e alcançar novos patamares em sua jornada. As recompensas atribuídas a essas experiências são cuidadosamente definidas pela equipe administrativa, levando em consideração o grau de dificuldade, o impacto narrativo e o nível de participação exigido.</p>
+                <p><strong>Recompensa mínima:</strong> 5.000 ienes & 1.000 pontos de atributos. </p>
+                <p><strong>Recompensa máxima:</strong> 25.000 ienes & 5.000 pontos de atributos.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>V. Observações</h2>
+                <p>Missões e eventos também podem conceder recompensas alternativas, como itens especiais, conforme a natureza e complexidade do conteúdo apresentado. Essas recompensas são definidas pela equipe administrativa com base na relevância da missão ou evento dentro do universo da trama.</p>
+                <p>Missões auto-narradas e treinos devem ser publicados entre segunda-feira às 00h01 e sábado às 00h00. O envio aos domingos está, por ora, proibido, como medida de organização e controle interno da equipe responsável pela avaliação.</p>
+                <p>Além disso, os jogadores poderão receber uma bonificação adicional ao evento ou missão, conforme o desempenho demonstrado durante sua participação. Essa avaliação levará em conta critérios como profundidade narrativa, consistência interpretativa, impacto na trama, criatividade na resolução de desafios e fidelidade ao universo proposto. A bonificação será concedida mediante análise da equipe administrativa, valorizando não apenas o cumprimento dos objetivos, mas a qualidade e o envolvimento expressos ao longo da experiência.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>VI. Atributos</h2>
+                <p>Os atributos representam as capacidades essenciais e as características inatas de cada personagem, funcionando como indicadores de desempenho em situações que exigem esforço como combates, missões e demais interações relevantes dentro da trama. Esses atributos não apenas determinam a eficácia do personagem em ações específicas, como também influenciam diretamente sua maestria técnica, refletindo o grau de precisão, força e controle aplicado na execução de habilidades complexas. O desenvolvimento dos atributos ocorre de maneira gradual e orgânica, sendo impulsionado pela participação ativa em missões e eventos narrativos especialmente concebidos para esse fim. Cada avanço representa não apenas um aprimoramento mecânico, mas também uma evolução simbólica da jornada individual do personagem, consolidando sua trajetória dentro do universo do jogo.</p>
+                
+                <p><strong>– Lista de Atributos:</strong></p>
+                <p><strong>Força:</strong> A Força é um atributo que mede a capacidade física do personagem de exercer poder muscular e aplicar força bruta em diversas situações, como combates corpo a corpo, levantamento de objetos pesados e superação de obstáculos físicos. A Força influencia diretamente a eficácia dos ataques físicos, permitindo que o personagem cause mais dano aos inimigos e execute manobras que exigem grande potência muscular. A Força é calculada com base na massa muscular, na densidade óssea e na eficiência do sistema nervoso do personagem. Personagens com alta Força podem executar ações que exigem grande esforço físico, como golpear demônios com força sobre-humana ou arremessar objetos pesados com precisão.</p>
+                <p><strong>Resistência:</strong> A Resistência é um atributo que mede a capacidade do personagem de suportar danos físicos e ambientais, como lesões, venenos, doenças e condições climáticas adversas. A Resistência influencia diretamente a capacidade do personagem de sobreviver a situações perigosas e manter-se eficaz em combate. A Resistência é calculada com base na capacidade do personagem de absorver e distribuir forças de impacto, na resistência à dor e na eficiência do sistema imunológico. Personagens com alta Resistência podem suportar mais danos antes de serem incapacitados ou mortos, reduzindo a quantidade de dano recebido e permitindo que o personagem permaneça em combate por mais tempo.</p>
+                <p><strong>Velocidade:</strong> A Velocidade é o atributo que mede a capacidade física do personagem de realizar movimentos em alta velocidade, incluindo deslocamentos, ataques e outras ações motoras. Esse atributo determina a rapidez com que o personagem pode agir em combate ou em outras situações que exigem resposta imediata. Ele influencia diretamente o tempo de reação, a execução de ações sucessivas em curto intervalo de tempo e a capacidade de se mover rapidamente pelo ambiente. A Velocidade é calculada com base na eficiência do sistema nervoso central, na capacidade de impulsão muscular e na resposta neuromuscular geral. Personagens com alta Velocidade se destacam por sua prontidão física, conseguindo correr, atacar ou reposicionar-se mais rapidamente que seus oponentes.</p>
+                <p><strong>Agilidade:</strong> A Agilidade é o atributo que mede a capacidade do personagem de realizar movimentos com precisão, coordenação e fluidez, especialmente em situações que exigem controle refinado do corpo. Este atributo está diretamente relacionado à habilidade de executar manobras complexas, esquivas, acrobacias e ajustes rápidos de posição ou postura em resposta ao ambiente. A Agilidade é determinada pela combinação entre flexibilidade muscular, coordenação motora fina e capacidade de reação neuromotora. Personagens com alta Agilidade são capazes de ajustar seus movimentos com precisão milimétrica, desviando de ataques, mantendo o equilíbrio em situações difíceis e reagindo com eficiência a estímulos inesperados.</p>
+                <p><strong>Respiração:</strong> A Respiração é um atributo que mede a capacidade do personagem de dominar as Técnicas de Respiração, que são métodos de combate que utilizam a respiração para amplificar os atributos físicos. A Respiração influencia diretamente a capacidade do personagem de executar Técnicas de Respiração complexas e eficazes. A Respiração é calculada com base na capacidade do personagem de controlar a respiração, na eficiência do sistema cardiovascular e na maestria das Técnicas de Respiração. Personagens com alta Respiração podem executar Técnicas de Respiração complexas e eficazes, aumentando sua força e velocidade em combate.</p>
+                <p><strong>Sangue:</strong> O Sangue é um atributo que mede a capacidade do personagem de dominar as Artes de Sangue Demoníaco, que são habilidades demoníacas que utilizam o sangue para aumentar seu poder em combate, além de permitir o uso de habilidades únicas e poderosas relacionadas ao sangue demoníaco. O Sangue influencia diretamente a capacidade do personagem de executar Artes de Sangue Demoníaco complexas e eficazes. O Sangue é calculado com base na capacidade do personagem de controlar o sangue, na eficiência do sistema circulatório e na maestria das Artes de Sangue Demoníaco. Personagens com alto Sangue podem executar Artes de Sangue Demoníaco complexas e eficazes.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SISTEMA MONETARIO PAGE -->
+    <div class="page" id="sistema-monetario">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← Systems </button>
+            <h1> Sistema Monetário </h1>
+
+            <div class="image-placeholder">
+                <img src="https://i.pinimg.com/1200x/85/47/6b/85476b2cbb6efece6cae32dc066ab6aa.jpg" width="100%" height="100%"></img>  
+            </div>
+<div class="content-section">
+    <h2>I. Introdução</h2>
+    <p>O sistema monetário presente no RPG Kimetsu no Yaiba: Hyakki Yagyō foi cuidadosamente concebido para refletir com fidelidade a estrutura econômica da Era Taisho (1912–1926), período marcante da história japonesa em que o país vivenciava uma profunda transição entre os valores tradicionais do feudalismo e os ventos da modernização ocidental. Neste universo narrativo, o dinheiro transcende sua função convencional de meio de troca: ele torna-se símbolo de status social, instrumento de sobrevivência e expressão de poder em negociações, especialmente em um cenário onde criaturas demoníacas espreitam nas sombras e caçadores dedicam suas vidas à proteção da humanidade. A economia do jogo fundamenta-se nas moedas oficiais da época, preservando a autenticidade histórica e ao mesmo tempo adaptando-se às exigências dramáticas e mecânicas da narrativa. Cada transação realizada pelos personagens carrega um peso simbólico e emocional, refletindo não apenas a escassez de recursos, mas também a dureza da vida cotidiana em uma sociedade constantemente ameaçada por forças sobrenaturais. Assim, o sistema monetário não apenas enriquece a ambientação do RPG, como também aprofunda a experiência do jogador, ao integrar elementos históricos e ficcionais em uma trama densa, envolvente e repleta de significado.</p>
+</div>
+
+<div class="content-section">
+    <h2>II. Moedas</h2>
+                    <img src="dinheiro.jpg" width="100%" height="100%"></img>  
+    <p>O Yen (¥) constitui a moeda oficial do Japão durante a Era Taisho e serve como base do sistema econômico adotado no RPG Kimetsu no Yaiba: Hyakki Yagyō. Sua incorporação ao jogo não se limita à funcionalidade monetária, mas também reforça o compromisso com a ambientação histórica e a fidelidade estética do período.</p>
+    <p><strong>Cédulas:</strong><br>
+    - 1 Yen — De dimensões reduzidas, esta cédula apresenta tonalidades discretas, como sépia ou verde-oliva. Seu design é simples e elegante, com ornamentos florais tradicionais e um selo imperial em destaque. O papel é fino, de textura levemente áspera, transmitindo a sensação de um item cotidiano e acessível.<br>
+    - 5 Yen — Um pouco maior e mais detalhada, esta cédula exibe cores como azul escuro e dourado. Traz ilustrações de templos ou figuras históricas, acompanhadas de caligrafia em estilo clássico. O papel possui textura firme e marcas d’água visíveis sob incidência de luz.<br>
+    - 10 Yen — Com design mais elaborado, esta cédula apresenta paisagens naturais, como montanhas e rios, emolduradas por padrões geométricos sutis. As cores predominantes são verde profundo e cinza, e o papel é espesso, com acabamento refinado e bordas ornamentadas.<br>
+    - 100 Yen — A mais imponente entre as cédulas, possui dimensões generosas e detalhes em vermelho escuro e preto. Retrata figuras imperiais ou samurais lendários, com bordas decoradas e elementos em relevo. O papel é de alta qualidade, transmitindo prestígio e valor elevado.</p>
+</div>
+
+<div class="content-section">
+    <h2>III. Economia Regional</h2>
+    <p>A estrutura econômica do Japão, conforme representada no RPG Kimetsu no Yaiba: Hyakki Yagyō, apresenta variações significativas de acordo com a localização geográfica, refletindo as disparidades socioeconômicas entre centros urbanos, cidades provinciais e vilarejos rurais. Essa diferenciação regional influencia diretamente o custo de vida, a disponibilidade de recursos e as estratégias de sobrevivência adotadas pelos personagens.</p>
+    <p><strong>Centros Urbanos (Tóquio, Osaka):</strong><br>
+    As grandes metrópoles concentram o comércio mais dinâmico e diversificado do país.<br>
+    - Os preços dos bens e serviços são, em média, 50% superiores em relação às demais regiões, refletindo o alto custo de vida.</p>
+    <p><strong>Cidades Provinciais:</strong><br>
+    Situadas fora dos grandes centros, essas cidades mantêm uma economia estável e funcional.<br>
+    - Os preços seguem um padrão regular, compatível com o poder aquisitivo médio da população.<br>
+    - Contudo, há restrições quanto à disponibilidade de itens especializados, que costumam ser escassos ou adquiridos por encomenda.</p>
+    <p><strong>Vilarejos Rurais:</strong><br>
+    Em áreas remotas e de difícil acesso, a economia assume características mais tradicionais e autossuficientes.<br>
+    - Os preços tendem a ser 50% inferiores, devido à baixa circulação de moeda e à simplicidade das transações.<br>
+    - A obtenção de itens raros ou sofisticados é extremamente limitada, exigindo deslocamentos longos ou negociações com comerciantes itinerantes.</p>
+</div>
+
+<div class="content-section">
+    <h2>IV. Salários e Remunerações</h2>
+    <p>A estrutura salarial do Esquadrão de Caçadores de Demônios é meticulosamente estabelecida de acordo com a hierarquia interna da organização, refletindo o grau de responsabilidade, a complexidade das atribuições e o acesso a recursos estratégicos. Cada patente corresponde a uma faixa de remuneração específica, definida com base no nível de risco envolvido nas missões e na relevância tática do posto ocupado. A remuneração é concedida semanalmente, garantindo aos membros ativos um sustento contínuo que lhes permita manter-se em operação, adquirir suprimentos e investir em aprimoramentos pessoais. Esse pagamento regular também funciona como reconhecimento institucional pelo serviço prestado, reforçando o vínculo entre mérito, dever e recompensa.</p>
+    <p> Kinoe: 20.000 Yen. </p>
+    <p> Hashira: Diferentemente das demais patentes, eles não estão sujeitos a uma remuneração fixa: recebem quantias variáveis conforme suas necessidades operacionais, podendo requisitar valores superiores a qualquer faixa padrão.</p>
+</div>
+
+<div class="content-section">
+    <h2>V. Compra de Itens</h2>
+    <p>Para efetuar a aquisição de um item, o jogador deverá preencher a Ficha de Equipamento, conforme o modelo previamente disponibilizado, e encaminhá-la para análise. Uma vez aprovada, será estipulado um prazo e preço correspondente, determinados de acordo com a natureza, complexidade e raridade do item solicitado. Após o pagamento, o jogador deverá realizar uma cena narrativa contendo no mínimo dez linhas, representando o momento da compra. Essa etapa final tem como objetivo integrar o processo de aquisição à construção dramática do personagem, conferindo profundidade à narrativa e valorizando o envolvimento interpretativo no universo do jogo.</p>
+</div>
+
+<div class="content-section">
+    <h2>VI. Recompensas de Caça</h2>
+    <p>As recompensas representam valores atribuídos à cabeça de personagens cujas ações se tornaram notórias, perigosas ou extraordinárias. Funcionam como um reflexo público de sua relevância, influência ou ameaça, sendo ajustadas conforme os feitos que marcam sua trajetória. Todos os personagens iniciam sua jornada com uma recompensa simbólica de ¥20.000 (vinte mil ienes), valor que serve como ponto de partida para futuras avaliações. À medida que acumulam feitos significativos — sejam eles conquistas estratégicas, combates memoráveis ou transgressões impactantes — suas recompensas são elevadas proporcionalmente, tornando-se indicadores visíveis de sua ascensão. Ao atingir determinados patamares, o personagem passa a receber destaque oficial, sendo contemplado com um perfil no site, onde sua recompensa é registrada e exibida publicamente.</p>
+</div>
+
+        </div>
+    </div>
+
+    <!-- HISTORIA PAGE -->
+    <div class="page" id="historia">
+        <div class="container">
+            <br><h1> História</h1>
+            <h3>Kimetsu no Yaiba: Hyakki Yagyō <br> (鬼滅の刃：百鬼夜行).</h3>
+            <div class="image-placeholder">
+                <img src="lore1.jpg"width="100%" height="100%"></img>
+            </div>
+
+            <h2> Hyakki Yagyō. (Era Taisho) </h2>
+            <p> Na alvorada crepuscular da Era Taisho (大正時代), quando os veus do mundo tangiam os limiares da dissolucao e o ceu, outrora lar dos astros impassiveis, se encerrava em um manto espesso de sombras onde nem mesmo as estrelas ousavam se insinuar, houve um instante — tenue, sagrado e profano — em que o tempo pareceu reter sua marcha, como se o proprio universo, em reverente silencio, assistisse ao desdobrar de um acontecimento que transcenderia a linearidade da historia para inscrever-se no amago do mito eterno: ali, sob o firmamento que tremeluzia como a superficie de um espelho rachado por forcas invisiveis, manifestou-se, nao como um devaneio ou supersticao, mas como realidade corporea e esmagadora, o Hyakki Yagyō (百鬼夜行), o “Desfile Noturno dos Cem Demônios”, processao abissal cujas origens mergulham no inconsciente ancestral do arquipelago japones, reunindo uma centena de onis (鬼) — criaturas cujas existencias, ate entao, habitavam apenas os sutis intersticios entre a oralidade popular, os pergaminhos esquecidos e os murmúrios dos eremitas —, agora convocados em carne e poder sob a lideranca absoluta e aterradora das Jūni no Kizuki (十二鬼月), as “Doze Luas Demoniacas”, arquidemonios de estatura mitologica cuja mera presenca distorcia o ar e cujos olhos contemplavam o mundo nao com desejo, mas com um desprezo sagrado, como se julgassem a criacao um erro digno de ser corrigido pelo fogo e pela treva; e foi contra essa mare viva de escuridao que se ergueram os ultimos bastioes da humanidade — os venerandos Hashira (柱), os “Pilares” da Lâmina, da Honra e da Memoria, herdeiros diretos de linhagens consagradas pelo sacrificio, forjados desde a infancia nao apenas com aco e tecnica, mas com principios que transpassavam o tempo e ancoravam-se em juras seladas pelo sangue e pela renuncia, e que, armados com suas laminas solares e as respiracoes cuja maestria transformava o corpo em extensao do espirito e a espada em prolongamento do destino, lancaram-se contra as hostes demoniacas nao como guerreiros comuns, mas como encarnacoes de ideais imortais, como relampagos vivos que, por um instante, pareciam capazes de perfurar a propria noite — e, todavia, mesmo diante da mais elevada manifestacao da bravura humana, mesmo quando suas tecnicas alcancaram um fulgor quase divino, os Hashira, um a um, tombaram: seus corpos foram ceifados como cerejeiras sob o acoite do inverno, suas almas elevadas como lamparinas consumidas pela ultima brisa no altar de um templo esquecido, entregando seus nomes ao grande silencio, ao sublime martirio da eternidade; porem, se os pilares ruiram, nao o fizeram em vao, pois arrastaram consigo, em sua queda, as mais poderosas Luas Inferiores e Superiores, que, entre as chamas purificadoras e o aco inviolavel das laminas solares, foram despedaçadas em sua carne e em sua arrogancia, ate que, ao fim do confronto, apenas uma entidade remanescesse em pe — o Jōgen no Ichi (上弦の壱), o “Lua Superior Um”, cujo corpo transcendeu a materia e cuja alma, ha muito, deixara de pertencer ao ciclo da morte e renascimento, tornando-se algo impenetravel à razao e inviolavel ao esquecimento, envolto em trevas tao densas que ate a propria escuridao se curvava diante dele; e assim, com a aniquilacao mutua das forcas supremas de ambos os lados, o mundo mergulhou em um vacuo de proposito, autoridade e direcao, onde a Kisatsutai (鬼殺隊) — a “Corporacao dos Cacadores” —, privada de seus pilares, vacilava entre escombros e ecos, entre memorias que doiam e promessas que pesavam mais do que a realidade poderia suportar, enquanto os demonios sobreviventes, agora sem mestres, dispersaram-se nao como feras sem rumo, mas como sombras que sabiam esperar, ocultando-se entre as frestas do mundo humano, tramando em sussurros o renascimento de uma nova ordem demoniaca, mais sutil, mais insidiosa, mais terrivelmente estruturada — um novo circulo de Kizuki (鬼月), reerguido nao sobre o instinto, mas sobre os ossos e os pecados da era anterior, uma especie de “Império Demoniaco”, cujo alvorecer nao sera anunciado com gritos, mas com o silencio implacavel da reorganizacao meticulosa; e é precisamente neste instante liminar, neste intersticio sagrado e profano entre o fim e o que ainda nao comecou, que se ergue o chamado — nao às lendas consumadas, mas aos jovens: espadachins e espadachinas, portadores indignos de um legado que nao lhes foi entregue, mas deixado como uma ferida aberta no coracao do tempo, pois a ausencia dos Hashira nao constitui apenas um vazio a ser preenchido, mas um desafio ao proprio fluxo da historia, um abismo que exige daqueles que se atrevem a atravessa-lo uma transformacao absoluta, um renascimento nao apenas fisico, mas espiritual, onde o nome de cada novo guerreiro devera ser nao eco do passado, mas origem de um futuro inedito, forjado com suor, disciplina e renuncia, pois nao ha gloria para quem apenas imita — ha apenas esquecimento; e, assim, enquanto o mundo cambaleia entre ruinas e possibilidades, entre reliquias e reinvencoes, enquanto os monstros ocultam-se sob peles novas e os juramentos antigos sao postos à prova como espadas que precisam ser retemperadas, o legado do Hyakki Yagyō (百鬼夜行), embora encerrado em sua forma original, permanece como semente adormecida, como fogo subterraneo aguardando um sopro para incendiar novamente o destino, e este novo ciclo — mais cruel, mais refinado, mais inevitavel — ja se insinua como uma escrita ainda por ser tracada, em que cada palavra sera forjada à lamina e selada com sacrificio absoluto, pois é somente à beira da destruicao que a verdadeira forma do espirito humano revela-se, nao como submissao, mas como a mais serena e indomavel expressao da liberdade. </p>           
+
+        </div>
+    </div> 
+
+    <!-- PERSONAGENS PAGE -->
+    <div class="page" id="personagens">
+        <div class="container">            
+            <br><h1> Characters </h1>
+            <p> Nesta seção, apresentamos os personagens que compõem o universo deste RPG. Cada figura possui atributos únicos, uma trajetória singular e um papel essencial na construção da narrativa. Heróis, vilões, aliados e criaturas fantásticas --- todos contribuem para a complexidade e profundidade da história. Explore suas origens, habilidades e motivações, e descubra como suas escolhas influenciam o destino de cada um. </p>
+
+            <div class="character-grid">
+                <div class="character-card">
+                    <div class="character-image"> 
+                        <img src="https://i.pinimg.com/736x/a4/49/b7/a449b72bfc369d8f5a1c8955d2305c3c.jpg"  width="100%" height="100%"></img>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-name">Shesshōmaru</div>
+                        <div class="character-alias">Lua Superior Um</div>
+                        <div class="character-bounty">Recompensa: 1.000.000.000¥</div>
+                    </div>
+                </div>
+
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="https://i.pinimg.com/736x/da/df/b4/dadfb4667c238fb107424b1765e3a08e.jpg"  width="100%" height="100%"></img>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-name">Kikyō Ubuyashiki</div>
+                        <div class="character-alias">Líder do Esquadrão de Caçadores de Demônios</div>
+                        <div class="character-bounty">Recompensa: 200.000¥</div>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="https://i.pinimg.com/736x/99/94/b2/9994b225fc579af92fd87a58d2f0ba01.jpg"  width="100%" height="100%"></img>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-name">Shuna</div>
+                        <div class="character-alias">Sacerdotisa da Lua</div>
+                        <div class="character-bounty">Recompensa: 200.000¥</div>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="https://i.pinimg.com/736x/7d/5d/46/7d5d466011acd064fcd9c2f92dbd8a19.jpg"  width="100%" height="100%"></img>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-name">Satomi Kochō</div>
+                        <div class="character-alias">Líder do Clã Kochō</div>
+                        <div class="character-bounty">Recompensa: 200.000¥</div>
+                    </div>
+            </div>
+
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="https://i.pinimg.com/1200x/15/0a/c3/150ac3880fc5171217dc7c49679780d7.jpg"  width="100%" height="100%"></img>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-name">Muzan Kibutsuji</div>
+                        <div class="character-alias">Rei Supremo dos Demônios</div>
+                        <div class="character-bounty">Recompensa: 10.000.000.000¥</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>  
+            <div class="footer-copyright">
+                @ Todos os Direitos Reservados. <br> Densenvolvido por Vih.
+            </div>
+    </footer>
+    <script src="KM.js"></script>
+
 </body>
 </html>
