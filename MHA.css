@@ -452,10 +452,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    @media (max-width: 768px) {
-    .page {
-        padding-top: 5%; /* Mais espaço apenas no mobile */
-    }
 }
 }
 
