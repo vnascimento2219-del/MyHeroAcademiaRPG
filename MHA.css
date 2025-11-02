@@ -146,20 +146,20 @@
         }
         
         /* Pages */
-        .page {
-            display: none;
-            padding: 100px 20px 40px;
-            min-height: 100vh;
-        }
+.page {
+    display: none;
+    padding: 150px 20px 40px; /* 150px de espaço no topo */
+    min-height: 100vh;
+}
 
         .page.active {
             display: block;
         }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2rem; /* Adiciona espaço extra */
+}
         
         .image-placeholder {
             width: 100%;
