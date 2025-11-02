@@ -450,6 +450,12 @@
     .system-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    @media (max-width: 768px) {
+    .page {
+        padding-top: 160px; /* Mais espaço apenas no mobile */
+    }
+}
 }
 
         /* Scrollbar */
