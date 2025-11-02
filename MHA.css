@@ -146,18 +146,20 @@
         }
         
         /* Pages */
-.page {
-    display: none;
-    min-height: 100vh;
-}
+        .page {
+            display: none;
+            padding: 100px 20px 40px;
+            min-height: 100vh;
+        }
 
         .page.active {
             display: block;
         }
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
         
         .image-placeholder {
             width: 100%;
@@ -408,35 +410,27 @@
 
         /* Responsive */
 
-      /* Mobile First - Estilos base já estão definidos */
+          
+        @media (max-width: 768px) {
+            h1, h2, h3, p, a {
+                font-size: 80%; /* reduz proporcionalmente */
+            }
+        }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* ou 1.8rem se preferir menor */
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    h3 {
-        font-size: 1.2rem;
-    }
-    
-    .character-name {
-        font-size: 1.4rem;
-    }
-    
-    .system-name {
-        font-size: 1.4rem;
-    }
-}
+        @media (min-width: 768px) {
+            .character-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
 
-@media (max-width: 768px) {
-    .page {
-        padding-top: 100px; /* Reduzido de 160px para 120px */
-    }
-}
+            .system-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
         /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
