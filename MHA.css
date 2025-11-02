@@ -454,7 +454,7 @@
 
     @media (max-width: 768px) {
     .page {
-        padding-top: 160px; /* Mais espaço apenas no mobile */
+        padding-top: 5%; /* Mais espaço apenas no mobile */
     }
 }
 }
