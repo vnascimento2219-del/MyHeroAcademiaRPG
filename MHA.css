@@ -434,7 +434,7 @@
 
 @media (max-width: 768px) {
     .page {
-        padding-top: 50px; /* Reduzido de 160px para 120px */
+        padding-top: 20%; /* Reduzido de 160px para 120px */
     }
 }
         /* Scrollbar */
