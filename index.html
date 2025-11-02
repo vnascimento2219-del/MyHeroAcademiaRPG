@@ -4,16 +4,464 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG: Kimetsu no Yaiba</title>
+    <title>RPG: My Hero Academia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Fredoka&family=Nunito&family=Poppins&family=Quicksand&family=Rubik&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="KM.css">
+    <link rel="stylesheet" href="MHA.css">
 
 </head>
 <body>
 
-<h1> A </h1>
+    <header>
+        <div class="header-content">
+                <div class="logo">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d0d5f274-3b4b-4928-a7e2-824dbe366732/dfjjzac-2eb31cfa-3808-4c42-b240-df54e4acd089.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kMGQ1ZjI3NC0zYjRiLTQ5MjgtYTdlMi04MjRkYmUzNjY3MzIvZGZqanphYy0yZWIzMWNmYS0zODA4LTRjNDItYjI0MC1kZjU0ZTRhY2QwODkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X4rEwDsAxXyGFbt9fBI1ICoqeAoxARHv0PJQ_nmbrdg" alt="Logo"/>
+                    <span> MY HERO ACADEMIA: RPG</span>
+                </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul class="nav-links">
+            <li><a href="#" data-page="principal" class="nav-item active"> Home </a></li>
+            <li><a href="#" data-page="sistemas" class="nav-item"> Systems </a></li>
+            <li><a href="#" data-page="historia" class="nav-item"> History </a></li>
+            <li><a href="#" data-page="personagens" class="nav-item"> Characters </a></li>
+        </ul>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- PRINCIPAL PAGE -->
+
+    <div class="page active" id="principal">
+        <div class="container">
+
+
+            <div class="image-placeholder" id="semBorda">
+                <img src="https://images8.alphacoders.com/736/736903.jpg" width="100%" height="100%"></img>
+            </div>
+
+            <div class="updates-section">
+
+                <h1> Atualizações </h1>
+                
+                <div class="update-card" data-update="update-1">
+                    <div class="update-title">(xxx)</div>
+                    <div class="update-date">(xxx)</div>
+                </div>
+
+                <div class="update-card" data-update="update-2">
+                    <div class="update-title">(xxx)</div>
+                    <div class="update-date">(xxx)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UPDATE SUBPAGES -->
+    <div class="page" id="update-1">
+        <div class="container">
+            <button class="back-button" data-back="principal">← (xxx)</button>   
+                <h1> Atualizações </h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="update-2">
+        <div class="container">
+            <button class="back-button" data-back="principal">← (xxx)</button>
+            <h1>(xxx)</h1>
+            
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMAS PAGE -->
+    <div class="page" id="sistemas">
+        <div class="container">
+            <br><h1> SISTEMAS </h1>
+            <p>Esta seção apresenta os principais sistemas que regem a dinâmica do RPG. Aqui, você encontrará informações detalhadas sobre os mecanismos de combate, progressão de personagens, habilidades e demais estruturas que sustentam a experiência de jogo. Cada sistema foi desenvolvido para proporcionar equilíbrio, profundidade estratégica e imersão narrativa. Em caso de dúvidas, entre em contato com a equipe de administração.</p>
+
+            <div class="system-grid">
+                <div class="system-card" data-page="sistema-atributos">
+                    <div class="system-icon"> </div>
+                    <div class="system-info">
+                        <div class="system-name"> Atributos </div>
+                        <div class="system-description"> O sistema de atributos define as capacidades físicas e mentais dos personagens no RPG. Ele orienta o estilo, os limites e o potencial de cada herói ou vilão. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-academico">
+                    <div class="system-icon">👹</div>
+                    <div class="system-info">
+                        <div class="system-name"> Avais </div>
+                        <div class="system-description"> Sistema exclusivo para a raça Oni. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-evolucao">
+                    <div class="system-icon">💰</div>
+                    <div class="system-info">
+                        <div class="system-name"> Evolução </div>
+                        <div class="system-description"> Sistema que define a estrutura econômica e as moedas utilizadas no RPG. </div>
+                    </div>
+                </div>
+
+                <div class="system-card" data-page="sistema-regras">
+                    <div class="system-icon">📖</div>
+                    <div class="system-info">
+                        <div class="system-name"> Guia </div>
+                        <div class="system-description"> Manual explicativo para preenchimento correto da ficha de personagem. </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA DE ATRIBUTOS PAGE -->
+     <div class="page" id="sistema-atributos">
+    <div class="container">
+        <button class="back-button" data-back="sistemas">← Sistemas</button>
+        
+        <h1>Sistema de Atributos</h1>
+            <div class="image-placeholder">
+                <img src="https://i.pinimg.com/1200x/33/4b/f8/334bf852a98a9de8af28521361366b93.jpg" width="100%" height="100%"></img>
+            </div>
+
+        <div class="content-section">
+            <h2>Visão Geral</h2>
+            <p>No RPG “My Hero Academia”, o sistema de atributos é uma ferramenta quantitativa e metodológica cuidadosamente estruturada, criada para medir com precisão e objetividade as capacidades individuais de cada personagem. Ele se divide em duas dimensões fundamentais — física e mental — permitindo uma avaliação detalhada do desempenho e do potencial de cada indivíduo dentro do jogo. Os cinco atributos principais são Força (F), Resistência (R), Velocidade (V), Agilidade (A) e Individualidade (Quirk), representando os aspectos essenciais que definem a força bruta, a resistência física, a velocidade de locomoção, a velocidade de reação e o controle da habilidade única de cada personagem. Esses atributos são expressos em valores numéricos que traduzem, de forma comparativa, o nível e as características básicas de um personagem em relação aos demais. Durante a criação do personagem, cada jogador recebe uma quantidade inicial de pontos para distribuir entre os atributos, moldando assim o estilo, as especialidades e as limitações do seu herói ou vilão dentro do sistema de jogo.</p>
+        </div>
+
+            <h2>Força</h2>
+            <p>O atributo Força (F) representa a potência física total do personagem, abrangendo sua capacidade de gerar, sustentar e aplicar esforço muscular em diferentes contextos de combate e interação com o ambiente. Ele mede não apenas a intensidade dos ataques corpo a corpo, mas também a eficiência em manipular, erguer ou arremessar objetos pesados, romper barreiras e causar impacto direto e significativo sobre adversários. Um valor elevado em Força indica alto poder destrutivo, resistência aprimorada a restrições físicas e maior eficiência em manobras ofensivas e defensivas que dependem de vigor muscular. Esse atributo também influencia a capacidade do personagem de suportar esforços prolongados, resistir a pressões externas e adaptar-se a situações que exigem desempenho físico extremo. Além disso, personagens cujo Quirk amplifique, complemente ou dependa da força física obtêm benefícios exponenciais desse atributo, podendo desenvolver combinações avançadas de técnicas que exploram tanto o impacto bruto quanto a resistência corporal. Assim, a Força é um parâmetro essencial para mensurar não apenas o desempenho em combate corpo a corpo, mas também a versatilidade e o domínio físico do personagem sobre o ambiente e sobre os efeitos de sua própria individualidade.</p>
+
+        <div class="content-section">
+            <h2>Resistência</h2>
+            <p>O atributo Resistência (R) mede de forma abrangente a durabilidade física, a vitalidade geral e a capacidade do personagem de suportar danos, fadiga, esforços prolongados e os efeitos adversos do uso intenso de sua individualidade (Quirk). Ele engloba tanto a tolerância à dor quanto a estabilidade fisiológica diante de situações extremas, incluindo a eficiência na recuperação após ferimentos, contusões ou exaustão. Personagens com alta Resistência conseguem manter desempenho elevado por períodos prolongados em combates, resistindo a impactos físicos, sobrecargas musculares e tensões ambientais sem que suas ações sejam comprometidas, demonstrando maior capacidade de enfrentar adversidades repetidas, sustentar esforços contínuos e suportar pressões prolongadas. Além disso, valores elevados em Resistência oferecem vantagens estratégicas significativas, permitindo que o personagem execute técnicas arriscadas ou desgastantes, mantenha-se operacional em situações críticas e utilize seu Quirk de forma prolongada sem sofrer penalidades relevantes. Dessa forma, a Resistência é um atributo essencial não apenas para a sobrevivência, mas também para a eficácia em confrontos e desafios físicos de alta intensidade.</p>
+        </div>
+
+            <h2>Velocidade</h2>
+            <p>O atributo Velocidade (V) mede de forma abrangente a velocidade de locomoção do personagem em qualquer situação, englobando não apenas a velocidade em linha reta, mas também a aceleração inicial, a capacidade de manter movimento contínuo ao longo de diferentes distâncias, a amplitude e o alcance efetivo de seus movimentos, bem como a habilidade de se reposicionar rapidamente no campo de batalha. Ele reflete diretamente a velocidade do personagem, permitindo ajustar posições, reagir a ataques inimigos, explorar brechas táticas e executar ataques surpresa com precisão temporal. Valores elevados em Velocidade facilitam perseguições, fugas rápidas de situações perigosas e a realização de manobras complexas que combinam ofensiva e defesa, aumentando o controle do ritmo do combate e reduzindo vulnerabilidades. Além disso, esse atributo é fundamental para a coordenação entre reflexos, percepção e execução de estratégias em tempo real, tornando-o essencial tanto para o desempenho físico quanto para a capacidade tática do personagem durante confrontos intensos e prolongados.</p>
+
+        <div class="content-section">
+            <h2>Agilidade</h2>
+            <p>O atributo Agilidade (A) define de forma abrangente a velocidade de reação, a coordenação motora fina e a precisão dos movimentos do personagem, incluindo a capacidade de realizar esquivas rápidas, bloqueios eficientes e contra-ataques com timing apurado, mesmo sob pressão intensa ou em situações de combate caótico. Valores elevados em Agilidade permitem reflexos quase instantâneos diante de ataques inimigos, execução de manobras acrobáticas complexas, saltos e giros que exigem controle corporal excepcional, além de manter equilíbrio e estabilidade em terrenos instáveis ou durante movimentos de alta velocidade. Esse atributo não apenas aprimora defesa e evasão, mas também potencializa técnicas ofensivas que dependem de sincronização precisa, posicionamento estratégico e mudanças rápidas de direção, tornando-o essencial para combates dinâmicos, confrontos que exigem respostas imediatas e a execução de habilidades que demandam precisão, controle corporal refinado e adaptabilidade constante frente a adversários versáteis.</p>
+        </div>
+
+            <h2>Individualidade</h2>
+            <p>O atributo Individualidade (Quirk) avalia de forma completa e precisa o potencial intrínseco e a eficácia prática da habilidade única de cada personagem, abrangendo múltiplos aspectos essenciais para seu desempenho em combate e em situações diversas. Ele mensura o poder destrutivo da habilidade, ou seja, a intensidade e a força de seus efeitos sobre o ambiente e adversários; o controle refinado, que determina a precisão, a consistência e a estabilidade de cada aplicação, evitando falhas e efeitos colaterais; a versatilidade de aplicação, que mede a capacidade de adaptar o Quirk a diferentes cenários, situações táticas e objetivos estratégicos; a eficiência energética, que indica quanto esforço ou energia o uso da habilidade consome e a duração sustentável de sua utilização sem comprometer a performance; e a resistência operacional, que reflete a estabilidade e a confiabilidade do Quirk mesmo sob uso contínuo ou em condições extremas. Valores elevados nesse atributo sinalizam domínio avançado da habilidade, permitindo ao personagem executar técnicas complexas, combinações estratégicas de alto impacto, manobras ofensivas e defensivas sofisticadas, ajustar rapidamente sua abordagem a diferentes desafios e prolongar a atuação em campo sem sofrer redução de desempenho. Em contrapartida, valores baixos indicam instabilidade no controle da Individualidade, desperdício de energia, maior risco de falhas ou efeitos adversos, limitação na execução de técnicas avançadas, vulnerabilidade em combates prolongados e dificuldade de adaptação a situações inesperadas. Por isso, a Individualidade constitui o núcleo do desempenho super-humano do personagem, funcionando como o parâmetro central que determina não apenas a força, a precisão e a eficácia de suas habilidades especiais, mas também sua consistência, adaptabilidade, impacto tático e potencial evolutivo, sendo decisiva para definir sua identidade estratégica, seu estilo de combate e sua capacidade de se destacar ou se desenvolver dentro do curso de heróis.</p>
+    </div>
+</div>
+
+    <!-- SISTEMA ACADÊMICO PAGE -->
+    <div class="page" id="sistema-academico">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← Sistemas </button>
+            <h1> SISTEMA ACADÊMICO </h1>
+            
+            <div class="image-placeholder">
+                <img src="https://i.pinimg.com/1200x/9a/bd/a4/9abda406d9583dffb6e91a307bb1e5eb.jpg" width="100%" height="100%"></img>
+            </div>
+    <p>A Escola Secundária UA (雄英高等学校, Yūei Kōkō) constitui-se como a mais renomada e prestigiada instituição de ensino voltada à formação de heróis profissionais em todo o Japão, sendo amplamente reconhecida por seu rigor acadêmico, excelência pedagógica e métodos de treinamento de vanguarda no campo do heroísmo. Situada estrategicamente no alto de uma colina arborizada com vista panorâmica para a cidade de Musutafu, a academia oferece uma infraestrutura de ponta, projetada para garantir o desenvolvimento integral de seus estudantes nas áreas física, técnica, estratégica e ética. A instituição é estruturada em múltiplos Departamentos e Classes — designadas pelas letras A, B, C, D, E, F, G, H, I, J e K — que agrupam os alunos conforme suas aptidões, especializações e desempenho, promovendo uma formação individualizada que valoriza o potencial singular de cada estudante. Diferenciando-se radicalmente dos modelos educacionais convencionais, a UA adota uma filosofia pedagógica flexível e meritocrática, concedendo ampla autonomia a seus docentes para conduzirem as aulas segundo suas próprias metodologias, com liberdade para estabelecer critérios avaliativos e disciplinares, inclusive a autoridade de expulsar estudantes a qualquer momento e por qualquer motivo considerado pertinente, ainda que de menor gravidade. Tal medida, embora severa, visa incutir senso de responsabilidade e compromisso absoluto nos alunos, sendo possível, contudo, a rematrícula de indivíduos expulsos, ainda que a ocorrência permaneça registrada de forma permanente em seus históricos acadêmicos. A instituição distingue-se também por seu notável legado histórico, tendo formado alguns dos heróis mais influentes e respeitados do país, cuja excelência consolidou a reputação da UA como símbolo máximo de competência e heroísmo nacional. Entre suas tradições mais emblemáticas, destaca-se o Festival Esportivo da UA, evento anual de magnitude nacional que atrai a atenção de cidadãos, agências e profissionais do ramo heroico, funcionando como vitrine para o talento e o progresso dos estudantes, bem como como plataforma de recrutamento e seleção de estagiários para renomadas agências de heróis. Esse torneio, aberto à participação de alunos de todos os departamentos, também representa uma oportunidade para que aspirantes de outros cursos demonstrem suas capacidades e busquem transferência para o Curso de Heróis, além de permitir que os cursos de Suporte e Negócios exibam suas inovações tecnológicas e habilidades empreendedoras, fortalecendo a interação interdisciplinar e o espírito de cooperação dentro da academia. Complementarmente, a UA realiza o Festival Escolar anual, evento de caráter recreativo e cultural no qual as diversas turmas organizam atividades, apresentações e atrações destinadas à integração entre alunos, corpo docente e comunidade, proporcionando momentos de descontração e convivência saudável, embora a realização desse festival possa ser suspensa em casos de ameaça externa ou instabilidade que comprometam a segurança da instituição. No âmbito administrativo e organizacional, cada turma possui um representante e um vice-representante, cargos de liderança internos que, embora impliquem responsabilidades adicionais, são considerados de alto prestígio e relevância no contexto do Curso de Heróis, servindo como parâmetro para o desenvolvimento de competências de gestão, responsabilidade e liderança, qualidades amplamente valorizadas por agências profissionais e entidades de formação heroica. A seleção desses representantes ocorre geralmente por meio de votação entre os próprios alunos, assegurando um processo democrático e participativo que reflete o espírito de colaboração e autogestão cultivado pela escola. O regime acadêmico da UA compreende uma semana letiva de seis dias, reservando o domingo como único dia oficial de descanso, o que evidencia a intensidade e o comprometimento exigidos dos estudantes, reforçando o ideal de disciplina, dedicação e excelência que sustenta a reputação inabalável da instituição como o mais elevado e respeitado centro de formação de heróis do Japão.</p>
+<div class="content-section">    
+    <h2>Disciplinas Gerais</h2>
+    <p>A instituição oferece uma formação acadêmica de base sólida e abrangente, composta por disciplinas obrigatórias que visam o desenvolvimento intelectual, ético e técnico dos estudantes. Entre as matérias fundamentais, incluem-se japonês, matemática, ciências, inglês e demais línguas estrangeiras, além de outras áreas do conhecimento consideradas essenciais para a formação completa do indivíduo. Todos os alunos, independentemente do departamento ao qual pertencem, cursam essas disciplinas básicas, que são cuidadosamente ajustadas a cada ano letivo para refletir avanços pedagógicos e científicos, assegurando um ensino atualizado, coerente e de excelência. O currículo é estruturado de modo a promover o raciocínio lógico, a expressão linguística e a compreensão intercultural, preparando os discentes para enfrentar desafios acadêmicos e profissionais futuros com competência e responsabilidade.</p>
+</div>
+
+    <h2>Departamento de Heróis</h2>
+    <p>Este departamento é dedicado à formação de indivíduos qualificados para atuar como heróis profissionais a serviço da sociedade, desenvolvendo neles não apenas habilidades técnicas e físicas, mas também valores éticos, humanitários e cívicos. O curso oferece uma ampla gama de disciplinas teóricas e práticas voltadas ao uso seguro e responsável das Individualidades, bem como à aplicação dessas habilidades em situações de resgate, combate e assistência pública. A grade curricular contempla treinamento intensivo em táticas de combate, defesa pessoal, primeiros socorros, gestão de crises, trabalho em equipe e ética heroica, além das disciplinas acadêmicas convencionais ministradas no período da manhã, seguidas de aulas práticas de Heroísmo durante a tarde. O ingresso nesse departamento é altamente competitivo e requer a aprovação em um rigoroso processo seletivo composto por um exame escrito, que avalia o conhecimento teórico dos candidatos, e um exame prático, no qual os aspirantes demonstram domínio de suas Individualidades enfrentando robôs simuladores de vilões, acumulando pontos de combate e de resgate conforme seu desempenho heroico. Os alunos que integram este departamento são distribuídos entre as turmas A e B, consideradas a elite da formação heroica.</p>
+
+<div class="content-section">
+    <h2>Departamento de Educação Geral</h2>
+    <p>Destinado aos alunos que não ingressam diretamente no curso de Heróis, este departamento desempenha um papel fundamental na formação acadêmica e cidadã, proporcionando um ensino de excelência que prepara os estudantes para a vida universitária, o mercado de trabalho e outras trajetórias profissionais. A estrutura pedagógica baseia-se em um corpo docente altamente qualificado e em metodologias modernas que estimulam o pensamento crítico, a criatividade e a autonomia intelectual. Embora o foco principal esteja na educação acadêmica tradicional, o departamento mantém vínculos com as demais áreas da instituição, promovendo intercâmbios e oportunidades de crescimento interno. Alunos com desempenho excepcional e histórico exemplar podem, mediante avaliação, ser transferidos para o Departamento de Heróis, demonstrando a permeabilidade e o mérito como princípios orientadores do sistema educacional. Os discentes deste departamento pertencem às turmas C, D e E, cada uma com ênfase em diferentes aspectos do desenvolvimento acadêmico e pessoal.</p>
+</div>
+
+    <h2>Departamento de Apoio</h2>
+    <p>Responsável pela formação de especialistas em tecnologia e engenharia aplicada ao heroísmo, este departamento concentra-se no estudo, na pesquisa e na criação de equipamentos de suporte destinados a aprimorar a eficiência e a segurança das operações heroicas. O currículo integra disciplinas de mecânica, eletrônica, design industrial, ciência dos materiais, programação e inovação tecnológica, proporcionando aos alunos uma base teórica sólida e uma prática intensiva em ambientes de laboratório e oficinas altamente equipadas. O espaço de trabalho é projetado para estimular a experimentação e o pensamento criativo, promovendo um ambiente de colaboração entre futuros engenheiros, inventores e designers. O objetivo principal é capacitar profissionais que possam desenvolver soluções engenhosas e funcionais, capazes de auxiliar heróis no campo de batalha e em situações de emergência. Os alunos vinculados a este departamento integram as turmas F, G e H, reconhecidas por sua inventividade e excelência técnica.</p>
+
+<div class="content-section">
+    <h2>Departamento de Gestão</h2>
+    <p>Voltado à formação de líderes e estrategistas especializados na administração do setor heroico, este departamento abrange todos os aspectos relacionados à economia, comunicação e governança no contexto das atividades de heróis profissionais. A grade curricular contempla disciplinas como administração, marketing, finanças, relações públicas, direito, ética corporativa e gestão de crises, além de aulas práticas voltadas à fundação e gerenciamento de agências de heróis, planejamento estratégico e manutenção da imagem pública dessas instituições. O objetivo central é preparar os alunos para compreender e operar de maneira eficiente a complexa estrutura que sustenta o mundo dos heróis, conciliando interesses sociais, econômicos e éticos. O curso também oferece módulos sobre empreendedorismo e capital de risco, incentivando a criação de novos modelos de negócio e promovendo a inovação organizacional no setor. Os estudantes pertencentes a este departamento são distribuídos entre as classes I, J e K, sendo reconhecidos por sua competência administrativa, visão analítica e capacidade de liderança.</p>
+</div>
+
+        </div>
+    </div>
+
+    
+    <!-- SISTEMA DE EVOLUÇÃO PAGE -->
+    <div class="page" id="sistema-evolucao">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← (xxx)</button>
+            <h1>(xxx)</h1>
+
+        <div class="image-placeholder">
+            <img src="https://i.pinimg.com/1200x/9a/bd/a4/9abda406d9583dffb6e91a307bb1e5eb.jpg" width="100%" height="100%"></img>
+        </div>
+
+        <p>O Sistema de Evolução constitui o alicerce central do desenvolvimento narrativo e mecânico dos personagens, simbolizando o progresso gradual e orgânico de cada aspirante a herói ao longo de sua jornada acadêmica e profissional. Esse sistema traduz, de forma precisa e estruturada, o amadurecimento individual, a consolidação de habilidades e o aprimoramento das Individualidades (Quirks), refletindo não apenas a força física e técnica, mas também o crescimento psicológico, emocional e moral dos jogadores. A evolução ocorre de maneira dinâmica, por meio de treinos intensivos, missões de campo, eventos especiais e interações significativas, cada um desses elementos concebido para proporcionar experiências únicas de aprendizado e superação. Em vez de depender exclusivamente de parâmetros quantitativos ou de simples acúmulo de pontos, o processo de evolução valoriza o mérito interpretativo, a criatividade estratégica e a coerência narrativa, recompensando decisões inteligentes, atitudes heroicas e a capacidade de adaptação diante de desafios complexos. À medida que os personagens avançam, novas possibilidades se tornam acessíveis — desde o desbloqueio de técnicas avançadas e formas aprimoradas de controle sobre o Quirk, até o fortalecimento de vínculos com aliados, mentores e instituições — consolidando o personagem não apenas como um combatente mais eficiente, mas como um verdadeiro herói em formação. O sistema, portanto, visa promover um ciclo de crescimento contínuo, onde cada conquista representa o resultado direto de esforço, determinação e aprendizado, estimulando o jogador a desenvolver uma identidade singular dentro do universo narrativo. O Sistema de Evolução em “My Hero Academia” não se limita a medir poder ou desempenho, mas atua como um instrumento narrativo e interpretativo de desenvolvimento pessoal e coletivo, integrando de forma harmônica os aspectos mecânicos, emocionais e simbólicos que definem a essência do heroísmo.</p>
+
+        <div class="content-section">    
+            <h2>Sistema de Treinos</h2>
+            <p>O Sistema de Treinos constitui o alicerce fundamental do desenvolvimento e aprimoramento individual dos personagens dentro do ambiente narrativo, funcionando como o principal instrumento de progressão e especialização das capacidades físicas, mentais, técnicas e, sobretudo, do domínio sobre o próprio Quirk. Cada sessão de treino representa um período específico de dedicação e empenho, podendo ocorrer de forma autônoma, sob a supervisão de instrutores, mentores ou figuras de autoridade, ou ainda em contextos de experimentação e autoaperfeiçoamento. Durante essas sessões, o jogador deve descrever com riqueza de detalhes e coerência interpretativa os métodos empregados, as etapas de execução, as condições ambientais, os objetivos traçados e os resultados obtidos, garantindo que a narrativa reflita o esforço, a lógica e a verossimilhança do processo de crescimento do personagem. Os treinos são classificados em categorias específicas, abrangendo as dimensões Física, Mental, Técnica, Tática e de Quirk, e cada uma delas deve manter compatibilidade com o perfil, o estágio evolutivo, a personalidade e as limitações naturais do personagem, evitando inconsistências entre a proposta narrativa e o progresso alcançado. A execução bem-sucedida de um treino resulta na concessão de Pontos de Atributos (P.A.). O progresso acumulado ao longo de múltiplas sessões reflete o amadurecimento integral do personagem, permitindo-lhe aprimorar técnicas previamente dominadas, superar limitações intrínsecas ao seu Quirk, desenvolver novas formas de aplicação de poder e consolidar um estilo de combate, raciocínio e interação cada vez mais refinado. Cabe ao narrador assegurar a equidade, a coerência evolutiva e o mérito interpretativo em cada instância de treino, zelando para que o avanço não se baseie unicamente na quantidade de atividades realizadas, mas na consistência narrativa, na justificativa lógica e na progressão gradual e orgânica da jornada individual de cada personagem, de modo que o sistema preserve seu caráter meritocrático, imersivo e narrativamente coeso.</p>
+        </div>
+
+            <h2>Treino Individual</h2>
+            <p>O Treino Individual representa a forma mais introspectiva e pessoal de aperfeiçoamento, sendo direcionado ao desenvolvimento autônomo das capacidades de um único personagem. Nessa modalidade, o jogador mergulha em um processo de autodescoberta e autossuperação, explorando os próprios limites físicos, mentais e emocionais, e aplicando técnicas, estratégias e métodos condizentes com seu nível de experiência e especialização. O treino individual permite ao personagem aprimorar aspectos específicos de sua performance — como força, velocidade, resistência, agilidade —, bem como testar variações táticas e novas aplicações de seu Quirk em condições seguras e controladas. Essa prática evidencia a disciplina, a determinação e a maturidade do personagem diante de seus próprios desafios, sendo também um reflexo de seu comprometimento com a excelência pessoal. A qualidade narrativa, o detalhamento descritivo e a coerência com o histórico do personagem são fatores determinantes para a avaliação e a pontuação final do treino, já que o avanço individual deve demonstrar uma evolução consistente, lógica e emocionalmente plausível dentro da trajetória interpretativa do jogador.</p>
+            <p><strong>Requisitos:</strong> 250 Palavras</p>
+            <p><strong>Recompensa:</strong> 50 Pontos de Atributos</p>
+            <p><strong>Limite:</strong> 02 Treinos Semanais</p>
+
+        <div class="content-section">
+            <h2>Treino Coletivo</h2>
+            <p>O Treino em Conjunto, por sua vez, constitui uma modalidade colaborativa voltada ao aprimoramento coletivo e à integração entre personagens, enfatizando o desenvolvimento de coordenação, comunicação, estratégia em grupo e sinergia de habilidades. Nessa dinâmica, os jogadores interagem ativamente, combinando técnicas, estilos de combate, táticas de apoio e complementação mútua, em situações que simulam confrontos reais, missões cooperativas ou exercícios supervisionados. Essa forma de treino amplia não apenas o repertório técnico de cada participante, mas também fortalece vínculos narrativos, confiança e trabalho em equipe, aspectos essenciais para o sucesso em contextos de alta complexidade. Além disso, o treino conjunto proporciona oportunidades de aprendizado cruzado, permitindo que personagens mais experientes auxiliem os iniciantes, enquanto todos evoluem por meio da observação e adaptação mútua.</p>
+            <p><strong>Requisitos:</strong> 05 Turnos</p>
+            <p><strong>Recompensa:</strong> 100 Pontos de Atributos</p>
+            <p><strong>Limite:</strong> 02 Treinos Semanais</p>
+        </div>
+
+    <h2>Sistema de Missão</h2>
+    <p>O Sistema de Missões constitui o eixo central de progressão ativa dentro da estrutura narrativa do RPG, funcionando como o principal mecanismo de aplicação prática das habilidades, estratégias e princípios interpretativos que definem o desempenho dos personagens em situações de desafio e risco controlado. Cada missão é concebida como uma simulação narrativa complexa, representando operações oficiais, tarefas de campo, eventos de emergência, investigações, resgates, confrontos diretos contra forças hostis ou ações de defesa civil, exigindo dos participantes não apenas domínio técnico e físico, mas também raciocínio tático, capacidade de adaptação e maturidade interpretativa. As missões são organizadas de acordo com uma escala de dificuldade progressiva, variando dos níveis D (iniciante), C (intermediário), B (avançado), A (crítico) e S (extremo), sendo que cada patamar define não apenas a magnitude dos riscos envolvidos, mas também a complexidade estratégica, o nível de ameaça, a necessidade de cooperação entre os personagens e o grau de impacto que o desfecho pode gerar na trama principal do universo de jogo. O narrador é responsável por delinear o contexto situacional de cada missão, estabelecendo o enredo introdutório, as condições ambientais, os recursos disponíveis, os objetivos principais e secundários, bem como as condições de vitória e de falha, garantindo que cada operação mantenha coerência lógica, equilíbrio narrativo e desafios proporcionais ao nível dos personagens envolvidos. Aos jogadores cabe a função de responder a esses estímulos com criatividade, coerência interpretativa, espírito colaborativo e tomada de decisão estratégica, demonstrando compreensão do papel que exercem tanto individualmente quanto dentro do grupo. O desempenho dos participantes é avaliado segundo quatro critérios fundamentais: o uso inteligente e narrativamente consistente do Quirk, a eficiência e racionalidade das decisões táticas tomadas durante a missão, a fidelidade interpretativa ao perfil psicológico e moral do personagem e a contribuição efetiva para o avanço da narrativa coletiva, levando em conta tanto o impacto mecânico quanto o valor dramático das ações realizadas. O sucesso na conclusão de uma missão acarreta recompensas diversificadas, que podem incluir Pontos de Atributos PA proporcionais ao desempenho individual e coletivo, aumento de reputação perante instituições, facções e personagens influentes do universo, acesso a recursos materiais e financeiros, equipamentos especiais, benefícios narrativos e, em casos excepcionais, desbloqueios únicos de técnicas ou habilidades evolutivas. Além dos ganhos diretos, o sistema de missões desempenha um papel essencial na construção de vínculos interpessoais e progressão emocional, promovendo o fortalecimento de laços entre personagens, a consolidação de hierarquias e lideranças, e a geração de consequências narrativas permanentes, cujos desdobramentos moldam o futuro do enredo, o equilíbrio de forças no mundo e o amadurecimento interpretativo de cada participante. Dessa forma, o Sistema de Missões transcende a mera função de desafio mecânico, transformando-se em um instrumento narrativo dinâmico, meritocrático e evolutivo, onde cada escolha, vitória ou fracasso contribui para a construção orgânica, coerente e imersiva do universo de jogo como um todo.</p>
+
+<div class="content-section">
+    <h2>Sistema de Evento</h2>
+    <p>O Sistema de Eventos representa o ápice do dinamismo e da profundidade narrativa dentro da estrutura do RPG, configurando-se como o mecanismo de maior impacto coletivo e transformador do universo de jogo. Diferentemente das missões e treinos, que se concentram em progressões individuais ou localizadas, os eventos englobam acontecimentos de escala ampliada, capazes de reconfigurar drasticamente o cenário global, alterar o equilíbrio de poder entre facções, modificar instituições centrais e influenciar o destino de heróis, vilões e civis de forma simultânea. Conduzidos integralmente pelo narrador, esses eventos assumem caráter extraordinário e determinante, funcionando como marcos narrativos que introduzem novos arcos de enredo, crises globais, mudanças políticas e sociais, ameaças de larga escala ou revelações que redefinem a continuidade da trama principal. Cada evento é estruturado de maneira minuciosa, possuindo contexto histórico e narrativo próprio, condições específicas de participação, regras personalizadas, metas coletivas e individuais, além de variáveis ambientais e temporais que ampliam a imersão e a tensão dramática da experiência. Dependendo da natureza de sua proposta, um evento pode ser competitivo (centrado em disputas diretas e desafios entre personagens ou facções), colaborativo (fundamentado na união de esforços em prol de um objetivo comum) ou narrativo (focado na progressão dramática e no desenvolvimento de personagens e instituições), sendo possível ainda a combinação desses formatos para criar experiências híbridas e imprevisíveis. A participação ativa dos jogadores é essencial, uma vez que cada decisão tomada dentro do contexto do evento — seja individual ou em grupo — gera repercussões diretas e permanentes na construção do mundo, podendo redefinir alianças, instaurar conflitos, promover ascensões heroicas ou precipitar quedas trágicas. O desempenho dos participantes é avaliado de forma abrangente, levando em consideração critérios como impacto narrativo das ações, coerência interpretativa, uso criativo e estratégico de habilidades e Quirks, contribuição para o desenrolar coletivo do enredo e maturidade narrativa na condução das decisões e interações. As recompensas concedidas ao término de um evento são de natureza excepcional e singular, refletindo sua importância dentro da cronologia do RPG: incluem saltos evolutivos significativos em atributos e perícias, desbloqueio de habilidades ou técnicas, acesso a recursos narrativos exclusivos, obtenção de títulos honoríficos e posições institucionais, elevação de reputação social ou heroica, e até mesmo modificações permanentes na hierarquia de poder. Por sua escala e profundidade, os eventos demandam comprometimento interpretativo elevado, disciplina narrativa e plena consciência das implicações narrativas e morais de cada escolha feita pelos jogadores, visto que seus desfechos moldam de maneira irreversível a continuidade da história, influenciando não apenas a trajetória individual dos personagens, mas também a identidade, o equilíbrio e o futuro do mundo do RPG como um todo.</p>
+</div>
+
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    <!-- SISTEMA COMBATE PAGE -->
+    <div class="page" id="sistema-combate">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← (xxx)</button>
+            <h1>(xxx)</h1>
+
+            <div class="image-placeholder">
+                🖼️
+            </div>
+
+            <div class="content-section">
+                <div class="content-icon">⚡</div>
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+
+            <div class="content-section">
+                <h2>(xxx)</h2>
+                <p>(xxx)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SISTEMA PROGRESSAO PAGE -->
+    <div class="page" id="sistema-progressao">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← Systems </button>
+            <h1> Sistema de Evolução </h1>
+
+            <div class="image-placeholder">
+                <img src="https://i.pinimg.com/1200x/08/ba/09/08ba0998a3e187e444f4f08ae427664b.jpg" width="100%" height="100%"></img>
+            </div>
+
+            <div class="content-section">
+                <h2>I. Introdução</h2>
+                <p>O Sistema de Evolução do RPG “Kimetsu no Yaiba: Hyakki Yagyo” configura-se como uma estrutura narrativa concebida para promover o desenvolvimento equilibrado e coerente dos personagens, fundamentado nas experiências vivenciadas ao longo da jornada dentro da trama. Este sistema estabelece diretrizes claras que regem o crescimento de cada personagem — seja da categoria “Oni” ou “Slayer” — permitindo-lhes adquirir novas habilidades, aprimorar atributos e avançar na história. Neste documento, encontram-se reunidas todas as instruções, explicações e orientações necessárias para a evolução de cada personagem. Diferentemente de abordagens baseadas em repetições mecânicas, este sistema valoriza o progresso genuíno, construído por meio de interações narrativas relevantes, desafios envolventes e decisões que refletem a trajetória singular de cada jogador. A evolução, portanto, não é apenas uma consequência técnica, mas o resultado natural da imersão na história, proporcionando uma experiência rica, dinâmica e verdadeiramente cativante.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>II. Treinamentos</h2>
+                <p>Os treinamentos constituem momentos especiais dedicados ao refinamento das habilidades dos personagens, focados especificamente no domínio de novas técnicas de respiração ou no desenvolvimento das artes sanguíneas. Cada personagem poderá dedicar-se a uma única sessão de treinamento semanal, preservando assim o equilíbrio entre todos os participantes e mantendo a coerência narrativa do universo. As técnicas inovadoras devem ser cuidadosamente elaboradas seguindo seus sistemas correspondentes e submetidas à análise administrativa. Uma vez aprovadas, o treinamento poderá ser realizado conforme os parâmetros estabelecidos. Há um limite mínimo de palavras a ser respeitado, e ressaltamos que, além dessa exigência, o conteúdo deve apresentar consistência narrativa e evidenciar, de forma clara, todo o processo criativo: desde a concepção inicial, passando pela experimentação, até chegar à maestria da técnica desenvolvida. Treinamentos que não atendam aos critérios descritos serão considerados inválidos.</p>
+                <p> Requisito: 500 palavras.</p>
+                <p>Recompensa: Uma nova técnica.</p>
+                <p>Ao publicar o treinamento, o jogador deverá mencionar um membro da equipe administrativa e aguardar a devida aprovação.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>III. Missões Auto-Narradas</h2>
+                <p>As missões auto-narradas consistem em aventuras concebidas e conduzidas integralmente pelos próprios jogadores, sem intervenção direta da equipe administrativa. São experiências narrativas que permitem liberdade criativa, dentro dos limites estabelecidos pelo universo do jogo. No caso dos caçadores de demônios, essas missões devem envolver confrontos variados contra forças malignas, refletindo os desafios que enfrentam em sua jornada de proteção e justiça. Já para os onis, é permitido explorar situações que envolvam a busca por alimento — geralmente humanos vulneráveis — bem como embates diretos contra caçadores, revelando os perigos e dilemas que enfrentam em sua existência sombria. Cada participante tem direito a realizar uma missão auto-narrada por semana, respeitando os critérios estabelecidos para garantir equilíbrio e consistência dentro da trama.</p>
+                <p>O cenário narrativo pode ser livremente concebido pela imaginação do jogador ou desenvolvido com base em propostas previamente apresentadas pela equipe administrativa. Para missões de autoria própria, é indispensável o preenchimento de uma ficha detalhada, contendo objetivos bem definidos, um contexto narrativo consistente e os desafios que deverão ser enfrentados ao longo da missão. Essa ficha deverá ser submetida à avaliação de um administrador, cuja aprovação é obrigatória para que a missão seja considerada válida e apta à execução. Alternativamente, o jogador poderá optar por concluir uma das missões previamente disponibilizadas pela equipe, caso prefira seguir um roteiro estruturado e previamente elaborado.</p>
+                <p>Cada missão deve apresentar coerência interna, respeitando a lógica e os fundamentos do universo da trama. A estrutura narrativa deve ser bem delineada, contemplando uma introdução clara, um desenvolvimento consistente e uma conclusão satisfatória, capaz de amarrar os eventos e justificar as ações realizadas ao longo da narrativa. Todas as decisões tomadas pelos personagens, bem como os acontecimentos descritos, devem estar alinhados com os princípios e limitações estabelecidos pelo cenário do RPG.</p>
+                <p> Requisito: 500 palavras.</p>
+                <p>Recompensa: 5.000 ienes & 1.000 pontos de atributos.</p>
+                <p>Ao publicar a missão, o jogador deverá mencionar um membro da equipe administrativa e aguardar a devida aprovação.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>IV. Eventos e Missões Narradas</h2>
+                <img src="https://i.pinimg.com/736x/ce/ba/fe/cebafe857131a184e1683fbc59e1a0e1.jpg" width="100%" height="100%"></img>
+                <p>Trata-se de experiências narrativas especiais conduzidas diretamente pela equipe administrativa, cuidadosamente planejadas para proporcionar vivências memoráveis aos participantes. Essas atividades — sejam missões ou eventos — apresentam enredos elaborados, desafios singulares e oportunidades de interação coletiva, promovendo não apenas o envolvimento individual, mas também o fortalecimento da dinâmica entre os jogadores. Tanto as missões quanto os eventos exercem influência direta sobre o desenvolvimento da trama principal, podendo alterar o curso da narrativa, introduzir novos elementos ao universo do jogo ou revelar aspectos ocultos da história. São momentos de grande relevância, nos quais os personagens têm a chance de vivenciar situações decisivas, superar obstáculos complexos e alcançar novos patamares em sua jornada. As recompensas atribuídas a essas experiências são cuidadosamente definidas pela equipe administrativa, levando em consideração o grau de dificuldade, o impacto narrativo e o nível de participação exigido.</p>
+                <p><strong>Recompensa mínima:</strong> 5.000 ienes & 1.000 pontos de atributos. </p>
+                <p><strong>Recompensa máxima:</strong> 25.000 ienes & 5.000 pontos de atributos.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>V. Observações</h2>
+                <p>Missões e eventos também podem conceder recompensas alternativas, como itens especiais, conforme a natureza e complexidade do conteúdo apresentado. Essas recompensas são definidas pela equipe administrativa com base na relevância da missão ou evento dentro do universo da trama.</p>
+                <p>Missões auto-narradas e treinos devem ser publicados entre segunda-feira às 00h01 e sábado às 00h00. O envio aos domingos está, por ora, proibido, como medida de organização e controle interno da equipe responsável pela avaliação.</p>
+                <p>Além disso, os jogadores poderão receber uma bonificação adicional ao evento ou missão, conforme o desempenho demonstrado durante sua participação. Essa avaliação levará em conta critérios como profundidade narrativa, consistência interpretativa, impacto na trama, criatividade na resolução de desafios e fidelidade ao universo proposto. A bonificação será concedida mediante análise da equipe administrativa, valorizando não apenas o cumprimento dos objetivos, mas a qualidade e o envolvimento expressos ao longo da experiência.</p>
+            </div>
+            
+            <div class="content-section">
+                <h2>VI. Atributos</h2>
+                <p>Os atributos representam as capacidades essenciais e as características inatas de cada personagem, funcionando como indicadores de desempenho em situações que exigem esforço como combates, missões e demais interações relevantes dentro da trama. Esses atributos não apenas determinam a eficácia do personagem em ações específicas, como também influenciam diretamente sua maestria técnica, refletindo o grau de precisão, força e controle aplicado na execução de habilidades complexas. O desenvolvimento dos atributos ocorre de maneira gradual e orgânica, sendo impulsionado pela participação ativa em missões e eventos narrativos especialmente concebidos para esse fim. Cada avanço representa não apenas um aprimoramento mecânico, mas também uma evolução simbólica da jornada individual do personagem, consolidando sua trajetória dentro do universo do jogo.</p>
+                
+                <p><strong>– Lista de Atributos:</strong></p>
+                <p><strong>Força:</strong> A Força é um atributo que mede a capacidade física do personagem de exercer poder muscular e aplicar força bruta em diversas situações, como combates corpo a corpo, levantamento de objetos pesados e superação de obstáculos físicos. A Força influencia diretamente a eficácia dos ataques físicos, permitindo que o personagem cause mais dano aos inimigos e execute manobras que exigem grande potência muscular. A Força é calculada com base na massa muscular, na densidade óssea e na eficiência do sistema nervoso do personagem. Personagens com alta Força podem executar ações que exigem grande esforço físico, como golpear demônios com força sobre-humana ou arremessar objetos pesados com precisão.</p>
+                <p><strong>Resistência:</strong> A Resistência é um atributo que mede a capacidade do personagem de suportar danos físicos e ambientais, como lesões, venenos, doenças e condições climáticas adversas. A Resistência influencia diretamente a capacidade do personagem de sobreviver a situações perigosas e manter-se eficaz em combate. A Resistência é calculada com base na capacidade do personagem de absorver e distribuir forças de impacto, na resistência à dor e na eficiência do sistema imunológico. Personagens com alta Resistência podem suportar mais danos antes de serem incapacitados ou mortos, reduzindo a quantidade de dano recebido e permitindo que o personagem permaneça em combate por mais tempo.</p>
+                <p><strong>Velocidade:</strong> A Velocidade é o atributo que mede a capacidade física do personagem de realizar movimentos em alta velocidade, incluindo deslocamentos, ataques e outras ações motoras. Esse atributo determina a rapidez com que o personagem pode agir em combate ou em outras situações que exigem resposta imediata. Ele influencia diretamente o tempo de reação, a execução de ações sucessivas em curto intervalo de tempo e a capacidade de se mover rapidamente pelo ambiente. A Velocidade é calculada com base na eficiência do sistema nervoso central, na capacidade de impulsão muscular e na resposta neuromuscular geral. Personagens com alta Velocidade se destacam por sua prontidão física, conseguindo correr, atacar ou reposicionar-se mais rapidamente que seus oponentes.</p>
+                <p><strong>Agilidade:</strong> A Agilidade é o atributo que mede a capacidade do personagem de realizar movimentos com precisão, coordenação e fluidez, especialmente em situações que exigem controle refinado do corpo. Este atributo está diretamente relacionado à habilidade de executar manobras complexas, esquivas, acrobacias e ajustes rápidos de posição ou postura em resposta ao ambiente. A Agilidade é determinada pela combinação entre flexibilidade muscular, coordenação motora fina e capacidade de reação neuromotora. Personagens com alta Agilidade são capazes de ajustar seus movimentos com precisão milimétrica, desviando de ataques, mantendo o equilíbrio em situações difíceis e reagindo com eficiência a estímulos inesperados.</p>
+                <p><strong>Respiração:</strong> A Respiração é um atributo que mede a capacidade do personagem de dominar as Técnicas de Respiração, que são métodos de combate que utilizam a respiração para amplificar os atributos físicos. A Respiração influencia diretamente a capacidade do personagem de executar Técnicas de Respiração complexas e eficazes. A Respiração é calculada com base na capacidade do personagem de controlar a respiração, na eficiência do sistema cardiovascular e na maestria das Técnicas de Respiração. Personagens com alta Respiração podem executar Técnicas de Respiração complexas e eficazes, aumentando sua força e velocidade em combate.</p>
+                <p><strong>Sangue:</strong> O Sangue é um atributo que mede a capacidade do personagem de dominar as Artes de Sangue Demoníaco, que são habilidades demoníacas que utilizam o sangue para aumentar seu poder em combate, além de permitir o uso de habilidades únicas e poderosas relacionadas ao sangue demoníaco. O Sangue influencia diretamente a capacidade do personagem de executar Artes de Sangue Demoníaco complexas e eficazes. O Sangue é calculado com base na capacidade do personagem de controlar o sangue, na eficiência do sistema circulatório e na maestria das Artes de Sangue Demoníaco. Personagens com alto Sangue podem executar Artes de Sangue Demoníaco complexas e eficazes.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SISTEMA MONETARIO PAGE -->
+    <div class="page" id="sistema-monetario">
+        <div class="container">
+            <button class="back-button" data-back="sistemas">← Systems </button>
+            <h1> Sistema Monetário </h1>
+
+            <div class="image-placeholder">
+                <img src="https://i.pinimg.com/1200x/85/47/6b/85476b2cbb6efece6cae32dc066ab6aa.jpg" width="100%" height="100%"></img>  
+            </div>
+<div class="content-section">
+    <h2>I. Introdução</h2>
+    <p>O sistema monetário presente no RPG Kimetsu no Yaiba: Hyakki Yagyō foi cuidadosamente concebido para refletir com fidelidade a estrutura econômica da Era Taisho (1912–1926), período marcante da história japonesa em que o país vivenciava uma profunda transição entre os valores tradicionais do feudalismo e os ventos da modernização ocidental. Neste universo narrativo, o dinheiro transcende sua função convencional de meio de troca: ele torna-se símbolo de status social, instrumento de sobrevivência e expressão de poder em negociações, especialmente em um cenário onde criaturas demoníacas espreitam nas sombras e caçadores dedicam suas vidas à proteção da humanidade. A economia do jogo fundamenta-se nas moedas oficiais da época, preservando a autenticidade histórica e ao mesmo tempo adaptando-se às exigências dramáticas e mecânicas da narrativa. Cada transação realizada pelos personagens carrega um peso simbólico e emocional, refletindo não apenas a escassez de recursos, mas também a dureza da vida cotidiana em uma sociedade constantemente ameaçada por forças sobrenaturais. Assim, o sistema monetário não apenas enriquece a ambientação do RPG, como também aprofunda a experiência do jogador, ao integrar elementos históricos e ficcionais em uma trama densa, envolvente e repleta de significado.</p>
+</div>
+
+<div class="content-section">
+    <h2>II. Moedas</h2>
+                    <img src="dinheiro.jpg" width="100%" height="100%"></img>  
+    <p>O Yen (¥) constitui a moeda oficial do Japão durante a Era Taisho e serve como base do sistema econômico adotado no RPG Kimetsu no Yaiba: Hyakki Yagyō. Sua incorporação ao jogo não se limita à funcionalidade monetária, mas também reforça o compromisso com a ambientação histórica e a fidelidade estética do período.</p>
+    <p><strong>Cédulas:</strong><br>
+    - 1 Yen — De dimensões reduzidas, esta cédula apresenta tonalidades discretas, como sépia ou verde-oliva. Seu design é simples e elegante, com ornamentos florais tradicionais e um selo imperial em destaque. O papel é fino, de textura levemente áspera, transmitindo a sensação de um item cotidiano e acessível.<br>
+    - 5 Yen — Um pouco maior e mais detalhada, esta cédula exibe cores como azul escuro e dourado. Traz ilustrações de templos ou figuras históricas, acompanhadas de caligrafia em estilo clássico. O papel possui textura firme e marcas d’água visíveis sob incidência de luz.<br>
+    - 10 Yen — Com design mais elaborado, esta cédula apresenta paisagens naturais, como montanhas e rios, emolduradas por padrões geométricos sutis. As cores predominantes são verde profundo e cinza, e o papel é espesso, com acabamento refinado e bordas ornamentadas.<br>
+    - 100 Yen — A mais imponente entre as cédulas, possui dimensões generosas e detalhes em vermelho escuro e preto. Retrata figuras imperiais ou samurais lendários, com bordas decoradas e elementos em relevo. O papel é de alta qualidade, transmitindo prestígio e valor elevado.</p>
+</div>
+
+<div class="content-section">
+    <h2>III. Economia Regional</h2>
+    <p>A estrutura econômica do Japão, conforme representada no RPG Kimetsu no Yaiba: Hyakki Yagyō, apresenta variações significativas de acordo com a localização geográfica, refletindo as disparidades socioeconômicas entre centros urbanos, cidades provinciais e vilarejos rurais. Essa diferenciação regional influencia diretamente o custo de vida, a disponibilidade de recursos e as estratégias de sobrevivência adotadas pelos personagens.</p>
+    <p><strong>Centros Urbanos (Tóquio, Osaka):</strong><br>
+    As grandes metrópoles concentram o comércio mais dinâmico e diversificado do país.<br>
+    - Os preços dos bens e serviços são, em média, 50% superiores em relação às demais regiões, refletindo o alto custo de vida.</p>
+    <p><strong>Cidades Provinciais:</strong><br>
+    Situadas fora dos grandes centros, essas cidades mantêm uma economia estável e funcional.<br>
+    - Os preços seguem um padrão regular, compatível com o poder aquisitivo médio da população.<br>
+    - Contudo, há restrições quanto à disponibilidade de itens especializados, que costumam ser escassos ou adquiridos por encomenda.</p>
+    <p><strong>Vilarejos Rurais:</strong><br>
+    Em áreas remotas e de difícil acesso, a economia assume características mais tradicionais e autossuficientes.<br>
+    - Os preços tendem a ser 50% inferiores, devido à baixa circulação de moeda e à simplicidade das transações.<br>
+    - A obtenção de itens raros ou sofisticados é extremamente limitada, exigindo deslocamentos longos ou negociações com comerciantes itinerantes.</p>
+</div>
+
+<div class="content-section">
+    <h2>IV. Salários e Remunerações</h2>
+    <p>A estrutura salarial do Esquadrão de Caçadores de Demônios é meticulosamente estabelecida de acordo com a hierarquia interna da organização, refletindo o grau de responsabilidade, a complexidade das atribuições e o acesso a recursos estratégicos. Cada patente corresponde a uma faixa de remuneração específica, definida com base no nível de risco envolvido nas missões e na relevância tática do posto ocupado. A remuneração é concedida semanalmente, garantindo aos membros ativos um sustento contínuo que lhes permita manter-se em operação, adquirir suprimentos e investir em aprimoramentos pessoais. Esse pagamento regular também funciona como reconhecimento institucional pelo serviço prestado, reforçando o vínculo entre mérito, dever e recompensa.</p>
+    <p> Kinoe: 20.000 Yen. </p>
+    <p> Hashira: Diferentemente das demais patentes, eles não estão sujeitos a uma remuneração fixa: recebem quantias variáveis conforme suas necessidades operacionais, podendo requisitar valores superiores a qualquer faixa padrão.</p>
+</div>
+
+<div class="content-section">
+    <h2>V. Compra de Itens</h2>
+    <p>Para efetuar a aquisição de um item, o jogador deverá preencher a Ficha de Equipamento, conforme o modelo previamente disponibilizado, e encaminhá-la para análise. Uma vez aprovada, será estipulado um prazo e preço correspondente, determinados de acordo com a natureza, complexidade e raridade do item solicitado. Após o pagamento, o jogador deverá realizar uma cena narrativa contendo no mínimo dez linhas, representando o momento da compra. Essa etapa final tem como objetivo integrar o processo de aquisição à construção dramática do personagem, conferindo profundidade à narrativa e valorizando o envolvimento interpretativo no universo do jogo.</p>
+</div>
+
+<div class="content-section">
+    <h2>VI. Recompensas de Caça</h2>
+    <p>As recompensas representam valores atribuídos à cabeça de personagens cujas ações se tornaram notórias, perigosas ou extraordinárias. Funcionam como um reflexo público de sua relevância, influência ou ameaça, sendo ajustadas conforme os feitos que marcam sua trajetória. Todos os personagens iniciam sua jornada com uma recompensa simbólica de ¥20.000 (vinte mil ienes), valor que serve como ponto de partida para futuras avaliações. À medida que acumulam feitos significativos — sejam eles conquistas estratégicas, combates memoráveis ou transgressões impactantes — suas recompensas são elevadas proporcionalmente, tornando-se indicadores visíveis de sua ascensão. Ao atingir determinados patamares, o personagem passa a receber destaque oficial, sendo contemplado com um perfil no site, onde sua recompensa é registrada e exibida publicamente.</p>
+</div>
+
+        </div>
+    </div>
+
+    <!-- HISTORIA PAGE -->
+    <div class="page" id="historia">
+        <div class="container">
+            <br><h1> História</h1>
+            <h3>Kimetsu no Yaiba: Hyakki Yagyō <br> (鬼滅の刃：百鬼夜行).</h3>
+            <div class="image-placeholder">
+                <img src="lore1.jpg"width="100%" height="100%"></img>
+            </div>
+
+            <h2> Hyakki Yagyō. (Era Taisho) </h2>
+            <p> Na alvorada crepuscular da Era Taisho (大正時代), quando os veus do mundo tangiam os limiares da dissolucao e o ceu, outrora lar dos astros impassiveis, se encerrava em um manto espesso de sombras onde nem mesmo as estrelas ousavam se insinuar, houve um instante — tenue, sagrado e profano — em que o tempo pareceu reter sua marcha, como se o proprio universo, em reverente silencio, assistisse ao desdobrar de um acontecimento que transcenderia a linearidade da historia para inscrever-se no amago do mito eterno: ali, sob o firmamento que tremeluzia como a superficie de um espelho rachado por forcas invisiveis, manifestou-se, nao como um devaneio ou supersticao, mas como realidade corporea e esmagadora, o Hyakki Yagyō (百鬼夜行), o “Desfile Noturno dos Cem Demônios”, processao abissal cujas origens mergulham no inconsciente ancestral do arquipelago japones, reunindo uma centena de onis (鬼) — criaturas cujas existencias, ate entao, habitavam apenas os sutis intersticios entre a oralidade popular, os pergaminhos esquecidos e os murmúrios dos eremitas —, agora convocados em carne e poder sob a lideranca absoluta e aterradora das Jūni no Kizuki (十二鬼月), as “Doze Luas Demoniacas”, arquidemonios de estatura mitologica cuja mera presenca distorcia o ar e cujos olhos contemplavam o mundo nao com desejo, mas com um desprezo sagrado, como se julgassem a criacao um erro digno de ser corrigido pelo fogo e pela treva; e foi contra essa mare viva de escuridao que se ergueram os ultimos bastioes da humanidade — os venerandos Hashira (柱), os “Pilares” da Lâmina, da Honra e da Memoria, herdeiros diretos de linhagens consagradas pelo sacrificio, forjados desde a infancia nao apenas com aco e tecnica, mas com principios que transpassavam o tempo e ancoravam-se em juras seladas pelo sangue e pela renuncia, e que, armados com suas laminas solares e as respiracoes cuja maestria transformava o corpo em extensao do espirito e a espada em prolongamento do destino, lancaram-se contra as hostes demoniacas nao como guerreiros comuns, mas como encarnacoes de ideais imortais, como relampagos vivos que, por um instante, pareciam capazes de perfurar a propria noite — e, todavia, mesmo diante da mais elevada manifestacao da bravura humana, mesmo quando suas tecnicas alcancaram um fulgor quase divino, os Hashira, um a um, tombaram: seus corpos foram ceifados como cerejeiras sob o acoite do inverno, suas almas elevadas como lamparinas consumidas pela ultima brisa no altar de um templo esquecido, entregando seus nomes ao grande silencio, ao sublime martirio da eternidade; porem, se os pilares ruiram, nao o fizeram em vao, pois arrastaram consigo, em sua queda, as mais poderosas Luas Inferiores e Superiores, que, entre as chamas purificadoras e o aco inviolavel das laminas solares, foram despedaçadas em sua carne e em sua arrogancia, ate que, ao fim do confronto, apenas uma entidade remanescesse em pe — o Jōgen no Ichi (上弦の壱), o “Lua Superior Um”, cujo corpo transcendeu a materia e cuja alma, ha muito, deixara de pertencer ao ciclo da morte e renascimento, tornando-se algo impenetravel à razao e inviolavel ao esquecimento, envolto em trevas tao densas que ate a propria escuridao se curvava diante dele; e assim, com a aniquilacao mutua das forcas supremas de ambos os lados, o mundo mergulhou em um vacuo de proposito, autoridade e direcao, onde a Kisatsutai (鬼殺隊) — a “Corporacao dos Cacadores” —, privada de seus pilares, vacilava entre escombros e ecos, entre memorias que doiam e promessas que pesavam mais do que a realidade poderia suportar, enquanto os demonios sobreviventes, agora sem mestres, dispersaram-se nao como feras sem rumo, mas como sombras que sabiam esperar, ocultando-se entre as frestas do mundo humano, tramando em sussurros o renascimento de uma nova ordem demoniaca, mais sutil, mais insidiosa, mais terrivelmente estruturada — um novo circulo de Kizuki (鬼月), reerguido nao sobre o instinto, mas sobre os ossos e os pecados da era anterior, uma especie de “Império Demoniaco”, cujo alvorecer nao sera anunciado com gritos, mas com o silencio implacavel da reorganizacao meticulosa; e é precisamente neste instante liminar, neste intersticio sagrado e profano entre o fim e o que ainda nao comecou, que se ergue o chamado — nao às lendas consumadas, mas aos jovens: espadachins e espadachinas, portadores indignos de um legado que nao lhes foi entregue, mas deixado como uma ferida aberta no coracao do tempo, pois a ausencia dos Hashira nao constitui apenas um vazio a ser preenchido, mas um desafio ao proprio fluxo da historia, um abismo que exige daqueles que se atrevem a atravessa-lo uma transformacao absoluta, um renascimento nao apenas fisico, mas espiritual, onde o nome de cada novo guerreiro devera ser nao eco do passado, mas origem de um futuro inedito, forjado com suor, disciplina e renuncia, pois nao ha gloria para quem apenas imita — ha apenas esquecimento; e, assim, enquanto o mundo cambaleia entre ruinas e possibilidades, entre reliquias e reinvencoes, enquanto os monstros ocultam-se sob peles novas e os juramentos antigos sao postos à prova como espadas que precisam ser retemperadas, o legado do Hyakki Yagyō (百鬼夜行), embora encerrado em sua forma original, permanece como semente adormecida, como fogo subterraneo aguardando um sopro para incendiar novamente o destino, e este novo ciclo — mais cruel, mais refinado, mais inevitavel — ja se insinua como uma escrita ainda por ser tracada, em que cada palavra sera forjada à lamina e selada com sacrificio absoluto, pois é somente à beira da destruicao que a verdadeira forma do espirito humano revela-se, nao como submissao, mas como a mais serena e indomavel expressao da liberdade. </p>           
+
+        </div>
+    </div> 
+
+    <!-- PERSONAGENS PAGE -->
+    <div class="page" id="personagens">
+        <div class="container">            
+            <br><h1> Characters </h1>
+            <p> Nesta seção, apresentamos os personagens que compõem o universo deste RPG. Cada figura possui atributos únicos, uma trajetória singular e um papel essencial na construção da narrativa. Heróis, vilões, aliados e criaturas fantásticas --- todos contribuem para a complexidade e profundidade da história. Explore suas origens, habilidades e motivações, e descubra como suas escolhas influenciam o destino de cada um. </p>
+<!--
+            <div class="character-grid">
+                <div class="character-card">
+                    <div class="character-image"> 
+                        <img src="https://i.pinimg.com/736x/a4/49/b7/a449b72bfc369d8f5a1c8955d2305c3c.jpg"  width="100%" height="100%"></img>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-name">Shesshōmaru</div>
+                        <div class="character-alias">Lua Superior Um</div>
+                        <div class="character-bounty">Recompensa: 1.000.000.000¥</div>
+                    </div>
+                </div>
+-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>  
+            <div class="footer-copyright">
+                @ Todos os Direitos Reservados. <br> Densenvolvido por Vih.
+            </div>
+    </footer>
+    <script src="KM.js"></script>
+
 </body>
 </html>
