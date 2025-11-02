@@ -416,10 +416,10 @@
           
    @media (max-width: 768px) {
     h1 {
-        font-size: 120%;
+        font-size: 400%;
     }
     h2, h3, p, a {
-        font-size: 80%;
+        font-size: 200%;
     }
 }
 
