@@ -432,6 +432,11 @@
     }
 }
 
+@media (max-width: 768px) {
+    .page {
+        padding-top: 50px; /* Reduzido de 160px para 120px */
+    }
+}
         /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
