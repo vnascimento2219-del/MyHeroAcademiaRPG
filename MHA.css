@@ -429,9 +429,7 @@
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            h1 {
-                font-size: 8rem;
-            }
+           
         }
 
         /* Scrollbar */
