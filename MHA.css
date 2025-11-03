@@ -350,16 +350,8 @@
         /* Responsive */
 
           
-        @media (max-width: 768px) {
-            h1, h2, h3, p, a {
-                font-size: 80%; /* reduz proporcionalmente */
-            }
-        }
 
         @media (min-width: 768px) {
-            .character-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
 
             .system-grid {
                 grid-template-columns: repeat(3, 1fr);
